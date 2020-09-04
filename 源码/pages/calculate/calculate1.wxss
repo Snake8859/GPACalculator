@@ -1,0 +1,105 @@
+/* pages/index/index1.wxss */
+.tab-h{
+    height: 80rpx;width: 100%; box-sizing: border-box;line-height: 80rpx; background:lightblue;font-size: 16px; white-space: nowrap;top: 0; left: 0; z-index: 99; text-align: center}
+.tab-item{margin:0 36rpx;display: inline-block;color:black}
+.tab-item.active:after{ content: "";display: block;height: 8rpx;width: 52rpx;background: #4675F9;position: absolute; bottom: 0;left: 5rpx;border-radius: 16rpx;}
+
+/*上部分课程输入框*/
+.input-index1{
+  
+  border: 2px solid black;
+  width: 200rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+
+.input-unchose{
+  background-color:darkgray;
+  border: 2px solid darkgray;
+  width: 200rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  text-align: center;
+  color: #888888;
+}
+
+/*下部分添加或者删除输入框*/
+.input-index1-other{
+  border: 2px solid black;
+  width: 320rpx;
+  height: 80rpx;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+
+
+/*flex父容器*/
+.content_row{  
+  display: flex;  
+  flex-direction: row;  
+  flex-wrap: wrap;
+ /* border: 1px solid red;*/
+  margin-top: 5rpx;
+}
+
+.content_column{  
+  display: flex;  
+  flex-direction:column;  
+  flex-wrap: wrap;
+ /* border: 1px solid red;*/
+  margin-top: 30rpx;
+}
+/*文本信息*/
+.text{
+  width:200rpx;
+  margin-left: 30rpx;
+  text-align: center;
+ /* border: 1px solid blue;*/
+}
+
+/*图片信息*/
+.imageInfo{
+ /* border: 1px solid green;*/
+  width: 60rpx;
+  height: 55rpx;
+  margin-bottom: 5prx;
+}
+
+
+/*文本信息*/
+.message{
+  text-align: center;
+  margin-top: 30rpx;
+ /* border: 1px solid green;*/
+}
+
+/*增加，删除按钮*/
+.button-change{
+  margin-top: 40rpx;
+  /*border: 1px solid pink;*/
+}
+/* 计算，清空按钮*/
+.button-calculation{
+  margin-top: 40rpx;
+  width: 300rpx;
+  border: 1px solid lightskyblue;
+  border-radius: 30rpx;
+}
+
+/*背景*/
+.backInfo{
+  /*border: 1px solid yellow;*/
+  background-repeat:round;
+  background-size: auto;
+  background-image: url('http://img18.3lian.com/d/file/201707/14/1cf3f14076de6d118171995f308dacec.jpg');
+  height: 100%;
+}
+
+/*用于填充空白*/
+.fill{
+  /*border: 1px solid red;*/
+  height: 415rpx
+}
+/*如何引用外部字体？*/

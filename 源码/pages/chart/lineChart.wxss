@@ -1,0 +1,68 @@
+/* pages/chart/chart.wxss */
+.input-chart{
+  /*border: 2px solid black;*/
+  width: 200rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+}
+.canvas {
+    border: 2px solid red;
+    width: 700rpx;
+    height: 400rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+
+/*提示信息*/
+.textShow{
+  /*border: 1px solid blue;*/
+  text-align: center;
+  margin-top: 20rpx;
+  color:deeppink;
+}
+
+/*flex父容器*/
+.content{
+ /* border: 1px solid brown;*/
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;
+}
+
+/*flex父容器*/
+.content_input{
+ /* border: 1px solid yellow;*/
+  display: flex;  
+  flex-direction: row;  
+  flex-wrap: wrap;
+  justify-content: center;
+}  
+
+
+/*只读框*/
+.input-unchose{
+  background-color:darkgray;
+  border: 2px solid darkgr;
+  width: 230rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  text-align: center;
+}
+
+/*输入框*/
+.input-chose{
+  border: 2px solid black;
+  width: 230rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+}
+
+/*按钮*/
+.button-calculation{
+  /*border: 1px solid black;*/
+  margin-top: 40rpx;
+  width: 300rpx
+}

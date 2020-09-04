@@ -1,0 +1,82 @@
+/**index.wxss**/
+
+
+/*输入框的view样式*/
+.inputBox{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  width: 600rpx;
+  height: 65rpx;
+  margin-top: 100rpx;
+  margin-left: 60rpx;
+  align-items: center;
+}
+
+/*输入框*/
+.input{
+
+  /*border: 1px solid red;*/
+  width: 455rpx;
+  height: 55rpx;
+  padding-top: 7rpx;
+}
+
+/*输入框信息栏*/
+.infoName{
+ /* border: 1px solid blue;*/
+  width:135rpx;
+  height: 55rpx;
+  padding-top: 10rpx;
+  padding-left: 10rpx;
+}
+
+/*图片信息*/
+.imageInfo{
+  /*border: 1px solid green;*/
+  width: 60rpx;
+  height: 55rpx;
+  margin-bottom: 5prx;
+}
+/*文本信息*/
+.text{
+  border-radius: 30rpx;
+  border: 2rpx solid gold;
+  margin-top: 50rpx;
+  text-align: center;
+  width: 80%;
+  margin-left: 60rpx;
+}
+/*文本信息*/
+.message{
+  text-align: center;
+}
+/*背景*/
+.backInfo{
+ /*border:  1px solid red;*/
+ background-position-x: 33%;
+ background-image: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1667018050,817822000&fm=27&gp=0.jpg');
+ height: 100%;
+
+}
+.tab-h{
+    height: 80rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx;background: #F7F7F7; font-size: 16px; white-space: nowrap;position: fixed;top: 0; left: 0; z-index: 99; text-align: center}
+.tab-item{margin:0 36rpx;display: inline-block; color:lightskyblue}
+.tab-item.active:after{ content: "";display: block;height: 8rpx;width: 52rpx;background: #4675F9;position: absolute; bottom: 0;left: 5rpx;border-radius: 16rpx;}
+
+.weui-btn{
+    margin-top:40rpx;
+    width: 60%;
+}
+
+/*flex父容器*/
+.content{  
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}  
+/*用于填充空白*/
+.fill{
+  /*border: 1px solid red;*/
+  height: 175rpx
+}

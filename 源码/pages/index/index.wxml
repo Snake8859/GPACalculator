@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">绩点计算器</view>
+     <view class="page__desc">绩点计算器，为绩点计算提供服务。可选择单科连续计算模式，也可选择多科一次性计算模式，同时提供图表分析功能。</view>
+  </view>
+</view>
+
+ <view class="page__bd page__bd_spacing">
+    <view class="kind-list">
+      <block wx:for="{{list}}" wx:key="id">
+        <view class="kind-list__item">
+           <view id="{{item.id}}" class="kind-list__item-hd" bindtap="kindToggle">
+              <view class="weui-flex__item">{{item.name}}</view>  
+             <!-- <image class="kind-list__img" src="../../images/{{item.id}}.png"></image>-->
+           </view>
+        </view>
+      </block>
+      <view>
+        <image class="kind-list__img1" src="../../images/calculate1.png"></image>
+        <image class="kind-list__img" src="../../images/calculate.png"></image>
+      </view>
+    </view>
+ </view>
+
+
+
+

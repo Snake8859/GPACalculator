@@ -1,0 +1,26 @@
+<!--pages/chart/welcomeChart.wxml-->
+<view class="page__hd">
+        <view class="page__title">图表</view>
+        <view class="page__desc">可对学期绩点变化做简单图表分析,点击下列选择项可进入相对应图表模块</view>
+</view>
+
+ 
+<navigator url="lineChart" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+      <image class="weui-media-box__thumb" src="../../images/lineChart.png" />
+    </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">线状图</view>
+        <view class="weui-media-box__desc">可对整个大学四年绩点的变化进行分析，将呈现在线状图中</view>
+        </view>
+ </navigator>
+
+ <navigator url="pieChart" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+      <image class="weui-media-box__thumb" src="../../images/pieChart.png" />
+    </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">饼状图</view>
+        <view class="weui-media-box__desc">可对每个学科单科绩点对平均绩点所占比例进行分析，将呈现在饼状图中</view>
+        </view>
+ </navigator>

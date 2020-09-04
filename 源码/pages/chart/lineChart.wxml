@@ -1,0 +1,26 @@
+<!--pages/chart/chart.wxml-->
+  <view class='textShow'><text>此处将显示线状图</text></view>
+  <view class='content'>
+  <canvas class="canvas" canvas-id="lineCanvas"></canvas>
+  </view>
+ <view class='content_input'>
+      <view wx:for="{{array}}" wx:for-item="i" wx:key="id" >
+                <view wx:if="{{i%2==0}}">
+                    <view class='input-unchose'>
+                    <input  disabled='false' value='{{semester[i/2]}}'></input>
+                    </view>
+                </view>
+                
+                <view wx:if="{{i%2==1}}" wx:key="id">
+                    <view class='input-chose'>
+                    <input type='digit' id="{{i}}" bindblur="realnameConfirm" value="{{init_info}}" placeholder='学期绩点'></input>
+                    </view>
+                </view>
+        </view>
+  </view>
+ <!-- <view class='textShow'><text>(学期绩点在0-5.0之间)</text></view> -->
+
+  <button class='button-calculation'  bindtap='showline' type='primary'>显示</button>
+
+     
+

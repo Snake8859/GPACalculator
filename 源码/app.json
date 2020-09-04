@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/introduce/introduce",
+    "pages/chart/welcomeChart",
+    "pages/chart/lineChart",
+    "pages/chart/pieChart",
+    "pages/calculate/calculate1",
+    "pages/calculate/calculate",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "绩点计算器",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "selectedColor": "#129db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ico-home.png",
+        "selectedIconPath": "images/ico-home-d.png"
+      },
+      {
+        "pagePath": "pages/chart/welcomeChart",
+        "text": "图表",
+        "iconPath": "images/ico-chart.png",
+        "selectedIconPath": "images/ico-chart-d.png"
+      },
+      {
+        "pagePath": "pages/introduce/introduce",
+        "text": "介绍",
+        "iconPath": "images/ico-introduce.png",
+        "selectedIconPath": "images/ico-introduce-d.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

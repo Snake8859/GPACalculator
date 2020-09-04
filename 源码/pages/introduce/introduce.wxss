@@ -1,0 +1,46 @@
+/* pages/introduce/introduce.wxss */
+.container1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexView{
+  margin-top: 50rpx;
+  border: 1px solid black;
+  width: 85%;
+  height: 400rpx;
+  border-radius: 30rpx;
+  background :bisque;
+
+}
+.flexViewplus{
+  margin-top: 50rpx;
+  border: 1px solid black;
+  width: 85%;
+  height: 540rpx;
+  border-radius: 30rpx;
+  background :bisque;
+
+}
+
+.blackImage{
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527523640358&di=19050e190423b2e3779919d151f174ac&imgtype=0&src=http%3A%2F%2Fimg5q.duitang.com%2Fuploads%2Fitem%2F201504%2F29%2F20150429093711_TdJNk.thumb.700_0.jpeg');
+  height: 100%;
+}
+
+.text{
+margin-top: 20rpx;
+font-size:25rpx;
+font-family:'Times New Roman', Times, serif;
+color:#999;
+}
+
+.title{
+  margin-top: 30rpx;
+  font-size: 35rpx;
+}
+
+.page__title{
+  font-size: 50rpx;
+  color: beige;
+}

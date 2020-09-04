@@ -1,0 +1,24 @@
+<!--pages/chart/pieChart.wxml-->
+<view class='textShow'><text>此处将显示饼状图</text></view>
+<view>
+<canvas class="canvas" canvas-id="pieCanvas"></canvas>
+</view>
+
+<view class='content_input'>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}" wx:key="{{id}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+</view>
+<view class='content'>
+<view class='text'>
+  <text decode="{{true}}">说明:
+  &nbsp;&nbsp;&nbsp;&nbsp;1.选择单科连续计算，可以将对之前单科连续计算里平均绩点贡献最大的前五位显示出来。剩下其他学科贡献的总和，以此来进行分析每个学科贡献程度。要显示饼状图，则至少在单科连续计算模式下连续计算6科以上。(此处说明学分越高的学科对平均绩点贡献度越大，用饼状图将其量化)
+
+
+   &nbsp;&nbsp;&nbsp;&nbsp;2.选择多科连续计算时同上
+  </text>
+  </view>
+</view>
+<button class='button-calculation' bindtap='showPie' type='primary'>显示</button>

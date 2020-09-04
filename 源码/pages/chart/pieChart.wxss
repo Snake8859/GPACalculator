@@ -1,0 +1,48 @@
+/* pages/chart/pieChart.wxss */
+/* pages/chart/chart.wxss */
+
+
+.canvas {
+    border: 2px solid red;
+    width: 700rpx;
+    height: 600rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+/*提示消息*/
+.textShow{
+  /*border:  2px solid yellow;*/
+  text-align: center;
+  margin-top: 20rpx;
+  color:deeppink;
+}
+
+/*flex父容器*/
+.content{
+  /*border: 2px solid black;*/
+  display: flex;  
+  flex-direction: column;  
+  align-items:  center;
+}
+
+/*flex父容器*/
+.content_input{  
+  /*border:  2px solid blue;*/
+  display: flex;  
+  flex-direction: row;  
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20rpx;
+}  
+/*提示消息*/
+.text{
+  border: 2rpx solid black;
+  background:honeydew;
+  margin-top: 40rpx;
+  width: 80%;
+}
+
+.button-calculation{
+   margin-top: 40rpx;
+   width: 300rpx;
+}

@@ -1,0 +1,77 @@
+<!--pages/index/index1.wxml-->
+<!--index.wxml-->
+<view class='backInfo'>
+  <view class='tab-h'>
+      <view class="tab-item" data-current="1" bindtap="swichNav">多科一次性计算</view>
+  </view>
+          <view class='content_row'> 
+              <view class='text'>
+                  课程
+              </view>
+              <view class='text'>
+                  成绩
+              </view>
+              <view class='text'>
+                  学分
+              </view>
+          </view>
+
+           <view class='content_row'> 
+              <view class='text'>
+                 <image src='../../images/course.png' class='imageInfo'></image>
+              </view>
+              <view class='text'>
+                <image src='../../images/grade.png' class='imageInfo'></image>
+              </view>
+              <view class='text'>
+                  <image src='../../images/credit.png' class='imageInfo'></image>
+              </view>
+          </view>
+<!--<form bindsubmit='getInfo'> -->
+  <view class='content_row'>
+      <view wx:for="{{array}}" wx:for-item="i" wx:key="id" >
+                <view wx:if="{{i%3==0}}">
+                    <view class='input-unchose'>
+                    <input type='digit' disabled='false' value='课程{{i/3+1}}'></input>
+                    </view>
+                </view>
+                <view wx:if="{{i%3==1}}" wx:key="id">
+                    <view class='input-index1'>
+                    <input type='digit' id="{{i}}" bindinput="getForm" value="{{init_info}}" ></input>
+                    </view>
+                </view>
+                <view wx:if="{{i%3==2}}">
+                    <view class='input-index1'>
+                    <input type='digit' id="{{i}}" bindinput="getForm" value="{{init_info}}" ></input>
+                    </view>
+                </view>
+          </view>  
+  </view>
+
+  <view class='content_row'>
+  
+   <button class='button-calculation' bindtap='calculation'>计算</button>
+   <!--<input class='button-calculation' bindfocus='calculation' value='计算'></input>-->
+   <button class='button-calculation' bindtap='clear'>清空</button>
+  </view>
+
+  <view class='message'><text class='iconfont icon-shouye'>平均绩点：{{GPA_message}}</text></view>
+<!--</form>-->
+
+
+
+<form bindsubmit='addArray'>
+  <view class='content_row'>
+    <input type='digit' name="conut" placeholder='添加数目或者删除' value='{{init_info}}'  class='input-index1-other'></input>
+    <button type='primary'  form-type='submit'  class='button-change' id='add'>增加</button>
+    <button  type="warn"  form-type='submit' class='button-change' id='delete' >删除</button>
+  </view>
+</form>     
+
+     <!--<form bindsubmit='deleteArray'>
+          <input type='digit' name="conut" placeholder='删除数目' value='{{init_info}}'  class='input-index1-other'></input>
+          <button   form-type='submit' class='button-change'>删除</button>
+      </form>     
+    -->
+    <view class='fill'></view>
+</view>

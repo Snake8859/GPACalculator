@@ -1,0 +1,36 @@
+<!-- <view bindtouchstart="touchStart" bindtouchend="touchEnd"></view>  滑动的view-->
+<view class='backInfo'>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+       <view class="tab-item"  data-current="0" bindtap="swichNav">单科连续计算</view>
+  </scroll-view>
+      <form bindsubmit='formSubmit'>
+        <view class='content'>
+         
+          <view class='inputBox'>
+           <image src='../../images/course.png' class='imageInfo'></image>
+           <view class='infoName'>课程名:</view>
+           <view class='input'><input name='course' type='text' placeholder='课程名字' value='{{form_info}}'></input></view>
+          </view>
+           <view class='message'>(课程名能为空)</view>
+          <view class='inputBox'>
+          <image src='../../images/grade.png' class='imageInfo'></image>
+          <view class='infoName'>成绩：</view>
+           <view class='input'> <input name='grade' type='digit' placeholder='单科成绩' value='{{form_info}}'bindinput='checkGrade'></input></view>
+          </view>
+          <view class='message'>(单科成绩在0-100范围内)</view>
+          <view class='inputBox'>
+          <image src='../../images/credit.png' class='imageInfo'></image>
+            <view class='infoName'>学分：</view>
+           <view class='input'> <input name='credit' type='digit' placeholder='单科学分' value='{{form_info}}' bindinput='checkCredit'></input> </view>
+          </view>
+            <view class='message'>(单科学分在0-5.5范围内)</view>
+          <button class="weui-btn" type="primary" form-type='submit'>开始计算</button>
+        </view>
+      </form>
+      <view class='content'>
+        <view class='text'><text>{{text}}</text></view>
+        <button  class="weui-btn" type="warn" bindtap='deleteResult'>删除</button>
+        <view class='text'><text>平均绩点:{{GPA}}</text></view>
+      </view>
+      <view class='fill'></view>
+</view>

@@ -1,0 +1,57 @@
+<!--pages/introd uce/introduce.wxml-->
+<view class='blackImage'>
+  <view class="page__hd">
+  <view class="page__title">介绍</view>
+  </view>
+  <view class='container1'>
+    <view class='flexView'>
+   <view class='title'>
+      <text decode="{{true}}" class='title'>&nbsp;&nbsp;&nbsp;&nbsp;绩点准则:</text>
+   </view>
+        <text decode="{{true}}" class='text'>
+          &nbsp;&nbsp;&nbsp;&nbsp;绩点计算按照中南林业科技大学学生手册规则进行计算.
+          
+          &nbsp;&nbsp;&nbsp;&nbsp;绩点计算准则如下:
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.单科绩点=(分数/10)-5
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.平均绩点=（单科绩点*学分）/总学分
+        </text>
+     
+    </view>
+
+    <view class='flexView'>
+    <view class='title'>
+     <text decode="{{true}}" class='title'>&nbsp;&nbsp;&nbsp;&nbsp;经历：</text>
+     </view>
+     <text decode="{{true}}" class='text'>
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;2018年3月构思绩点计算模式
+
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;2018年4月设计绩点计算的样式
+
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;2018年5月实现绩点计算功能
+
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;2018年6月发布
+      </text>
+    </view>
+
+    <view class='flexViewplus'>
+     <view class='title'>
+     <text decode="{{true}}" class='title'>&nbsp;&nbsp;&nbsp;&nbsp;致谢：</text>
+     </view>
+     <text decode="{{true}}" class='text'>
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;感谢向同学，陈同学，缪同学，张同学等同学的意见
+          
+          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;感谢汪老师的指导
+
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;我们是中南林GIS协会;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;我们严谨但不呆板,专一但不钻牛角尖;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;我们坚持授新生以渔,培养计算机思维;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;在这里,我们探讨合作,将想法变为现实;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;我们没什么了不起,只是选择了我们的你们成为了不起;
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;欢迎访问中南林GIS协会网站www.heygis.com
+      </text>
+    </view>
+  </view>
+</view>
+
